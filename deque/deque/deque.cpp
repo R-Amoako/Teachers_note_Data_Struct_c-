@@ -10,7 +10,6 @@ bool isPalindrom(std::string words) {
     bool isPalindrom = true;
     std::deque<char> word_deque{};
     std::deque<char> word_deque_{};
-
     for (auto s : words) {
         if (std::isalpha(s)) {
             word_deque.push_front(std::tolower(s));
@@ -28,8 +27,9 @@ bool isPalindrom(std::string words) {
     return isPalindrom;
 }
 
+
 int main()
 {
     std::cout << "'Do geese see God' is  a palindrom : " <<std::boolalpha<< isPalindrom("Do geese see God") << std::endl;
-}
+
 
