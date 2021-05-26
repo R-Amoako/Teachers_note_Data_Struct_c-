@@ -27,13 +27,10 @@ bool isPalindrom(std::string words) {
     return isPalindrom;
 }
 
-bool is_matched_bracket(std::string expr) {
-
-    //std::deque<char>
-}
-
 int main()
 {
     std::cout << "'Do geese see God' is  a palindrom : " <<std::boolalpha<< isPalindrom("Do geese see God") << std::endl;
+
 }
+
 
