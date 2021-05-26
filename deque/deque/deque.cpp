@@ -27,9 +27,10 @@ bool isPalindrom(std::string words) {
     return isPalindrom;
 }
 
-
 int main()
 {
     std::cout << "'Do geese see God' is  a palindrom : " <<std::boolalpha<< isPalindrom("Do geese see God") << std::endl;
+
+}
 
 
