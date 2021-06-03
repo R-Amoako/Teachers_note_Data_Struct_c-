@@ -145,7 +145,7 @@ std::string to_postfix(std::string infix) {
             if(optr_stack.empty() || !isOperator(optr_stack.top())) optr_stack.push(s);
 
             else{
-                while (!optr_stack.empty() && !has_higher_precedence(s, optr_stack.top()))
+                while (!optr_stack.empty() && has_higher_precedence(s, optr_stack.top()))
                 {
                     result_string += optr_stack.top();
                     optr_stack.pop();
